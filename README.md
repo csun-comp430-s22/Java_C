@@ -1,5 +1,6 @@
 # Java_C
 A small compiler written in Java that compiles down to C.  It features OOP, bounds-checked arrays, and subtyping.
+```
 Student Name(s): Kevin Siraki, Michael Barseghian, Miher Jivalagian 
 Language name: JavaC (named after the JDK compiler command)
 Compiler Implementation Language and Reasoning: We decided to go with Java as our implementation language because all team members are familiar with/proficient in Java and it provides us with garbage collection.
@@ -16,7 +17,7 @@ Work Planned for Custom Component: Bounds-checking for all array references made
 
 
 
-```
+
 Syntax:
 
 varname is any variable
