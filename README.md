@@ -2,10 +2,15 @@
 A small compiler written in Java that compiles down to C.  It features OOP, bounds-checked arrays, and subtyping.
 ```
 Student Name(s): Kevin Siraki, Michael Barseghian, Miher Jivalagian 
+
 Language name: JavaC (named after the JDK compiler command)
+
 Compiler Implementation Language and Reasoning: We decided to go with Java as our implementation language because all team members are familiar with/proficient in Java and it provides us with garbage collection.
+
 Target Language: C
+
 Language Description: The language will have a syntax that is quite comparable to Java syntax.  One added benefit of compiling from Java to C will be that we could utilize “structs” in C to emulate a class data type in Java.  We went with C as a target language as 2 of our group members are fairly adept in C and the syntactic structure of basic elements of both languages is not drastically different.
+
 Planned Restrictions: We will not be including any optimizations to the Java language to make runtimes more comparable to C.  The runtime speed combined with the statically-typed nature of each language will be a restriction to the scalability of this language.  Moreover, the conversion of the destructor ‘~’ to C may be too daunting for us to accomplish as it would require several “dealloc” calls, the size of which may be too hard to determine at compile time.  Also, the language will not have access modifier (private, public, protected), and it will not feature floating-point numbers/arithmetic. Lastly, arrays will need to be of a fixed/predefined length and there will not be any typecasting for now. 
 Computation Abstract Non-Trivial Feature: OOP. (Classes and methods, Class based inheritance)
 
@@ -14,9 +19,6 @@ Non-trivial Feature 2: Subtyping
 Non-trivial Feature 3: Bounds-checked arrays
 
 Work Planned for Custom Component: Bounds-checking for all array references made in a program.  For instance, if int arr[2] = {1, 2 }; and you do printf(“%d”,arr[2]); this would not generally throw a compilation error in C, but it will spit back some random memory address’s value.  However, our implementation will ensure proper bounds checking to alleviate some of the erratic behavior and security holes that may arise from such array references.
-
-
-
 
 Syntax:
 
