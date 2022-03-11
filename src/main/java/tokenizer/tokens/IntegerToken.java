@@ -4,10 +4,16 @@ public class IntegerToken implements Token {
     public final int value;
 	
 	public boolean equals(final Object other) {
-        return other instanceof IntegerToken;
+        if (other instanceof IntegerToken) {
+            final IntegerToken asInt = (IntegerToken)other;
+            return value == asInt.value;
+        } else {
+            return false;
+        }
     }
+	
 	public int hashCode() {
-        return 10;
+        return value;
     }
 
     public IntegerToken(final int value) {
